@@ -20,3 +20,22 @@ body {
   color: #fff;
   background: #040734;
 }
+input{
+  height: 40px;
+  width: 400px;
+  color: #000;
+  padding: 0 15px;
+}
+textarea{
+  height: 100px;
+  width: 400px;
+  color: #000;
+  padding: 0 15px;
+}
+button{
+  border-radius: 5px;
+  display: inline-block;
+  background: #0b9e6b;
+  border: 1px solid #0b9e6b;
+  padding: 10px 30px;
+}

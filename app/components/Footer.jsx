@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div>
-            <p>&copy; All right reserved</p>
+        <div className="bg-gray-900 text-center px-4 py-4">
+            <p>&copy; { new Date().getFullYear()} All right reserved</p>
         </div>
     );
 }
