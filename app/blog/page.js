@@ -7,9 +7,10 @@
 import {useEffect, useState} from "react";
 import SingleBlog from "@/app/components/SingleBlog";
 import getNewPost from "@/lib/getNewPost";
+import Loader from "@/app/components/Loader";
 export default function Blog() {
     // Recent Post
-    const [blogs, setBlogs] = useState([]);
+    const [blogs, setBlogs] = useState(null);
     const [error, setError] = useState("");
 
 
@@ -21,12 +22,24 @@ export default function Blog() {
 
 
 
-    return (
-        <div>
+
+    let output = "";
+    if(blogs===null){
+        output = <Loader />
+    }
+    else{
+        output = <div>
             <h3 className="text-2xl mb-3">Recent Blogs</h3>
             <div className="blogs grid-cols-3 grid gap-4">
                 {blogs.map((blog)=><SingleBlog key={blog.id} blog={blog} />)}
             </div>
         </div>
+    }
+
+    return (
+        <>
+            {output}
+
+        </>
     )
 }

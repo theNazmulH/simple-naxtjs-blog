@@ -21,5 +21,6 @@ export default function About() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores corporis, cumque dolore ea eos et ipsam labore minima minus, modi nam, natus quisquam quos reprehenderit rerum sapiente tempore temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur debitis dolorem dolores, eveniet excepturi facere illo libero modi nam odio odit omnis quae quaerat repudiandae sapiente sed temporibus voluptatem.</p>
             </div>
         </div>
+
     )
 }
